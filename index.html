@@ -21,6 +21,30 @@
               background-color:transparent
               }
 
+              .image:before {
+                content: url(assets/site_name_white.png);
+                transition: opacity 0.5s ease;
+                -webkit-transition: opacity 0.5s ease;
+              }
+
+              .image:after {
+                position: absolute;
+                left: 0;
+                opacity: 0;
+                content: url("assets/site_name_gray.png");
+                transition: opacity 0.5s ease;
+                -webkit-transition: opacity 0.5s ease;
+              }
+
+            .image:hover:after {
+            opacity: 1;
+            }
+
+            .image:hover:before {
+            opacity: 0;
+            }
+
+
 
         </style>
     </head>
@@ -33,7 +57,7 @@
               <div class="col text-center">
                 <a href="/about.html">  
                   <button>
-                    <img src="assets/site_name_white.png" class="img-fluid pr-5 pl-5">
+                    <div class= "image img-fluid pr-5 pl-5">
                   </button>
                   </a>
 
