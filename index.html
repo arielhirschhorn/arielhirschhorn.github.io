@@ -28,6 +28,11 @@
           
 
               .image:before {
+                position: absolute;
+                left: 50%;
+                top: -50%;
+                width: calc(25%);
+                height: calc(25%);
                 content: url(assets/site_name_white.png);
                 transition: opacity 0.5s ease;
                 -webkit-transition: opacity 0.5s ease;
@@ -35,7 +40,10 @@
 
               .image:after {
                 position: absolute;
-                left: 15%;
+                left: 50%;
+                top: -50%;
+                width: calc(25%);
+                height: calc(25%);
                 opacity: 0;
                 content: url(assets/site_name_gray.png);
                 transition: opacity 0.5s ease;
