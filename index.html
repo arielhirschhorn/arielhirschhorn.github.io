@@ -22,46 +22,30 @@
               }
 
 
-              .contain {
-                position: relative;
-                height:200px;
-                width:500px;
+
+
+              #cf {
+                position:relative;
+                height:662px;
+                width:3494px;
                 margin:0 auto;
+                }
+
+              #cf img {
+                position:absolute;
+                left:0;
+                -webkit-transition: opacity 1s ease-in-out;
+                -moz-transition: opacity 1s ease-in-out;
+                -o-transition: opacity 1s ease-in-out;
+                transition: opacity 1s ease-in-out;
+                }
+
+              #cf img.top:hover {
+              opacity:0;
               }
 
-            
-          
 
-              .contain:image:before {
-                position: absolute;
-                left: 0; 
-                right: 0;
-                top: 0;
-                bottom: 0; 
-                content: url(assets/site_name_white.png);
-                transition: opacity 0.5s ease;
-                -webkit-transition: opacity 0.5s ease;
-              }
 
-              .contain:image:after {
-                position: absolute;
-                left: 0; 
-                right: 0;
-                top: 0;
-                bottom: 0; 
-                opacity: 0;
-                content: url(assets/site_name_gray.png);
-                transition: opacity 0.5s ease;
-                -webkit-transition: opacity 0.5s ease;
-              }
-
-            .image:hover:after {
-            opacity: 1;
-            }
-
-            .image:hover:before {
-            opacity: 0;
-            }
 
 
 
@@ -76,7 +60,9 @@
           <div class="col text-center">
             <a href="/about.html"> 
               <button>
-                <div class= "contain">
+                <div id="cf">
+                  <img class="bottom" src="assets/site_name_gray.png" />
+                  <img class="top" src="assets/site_name_white.png" />
                 </div>
               </button>
             </a>
