@@ -24,33 +24,31 @@
 
               .contain {
                 position: relative;
-                height:281px;
-                width:450px;
+                height:200px;
+                width:500px;
                 margin:0 auto;
               }
 
             
           
 
-              .image:before {
+              .contain:image:before {
                 position: absolute;
                 left: 0; 
                 right: 0;
                 top: 0;
                 bottom: 0; 
-                margin: auto;
                 content: url(assets/site_name_white.png);
                 transition: opacity 0.5s ease;
                 -webkit-transition: opacity 0.5s ease;
               }
 
-              .image:after {
+              .contain:image:after {
                 position: absolute;
                 left: 0; 
                 right: 0;
                 top: 0;
                 bottom: 0; 
-                margin: auto; 
                 opacity: 0;
                 content: url(assets/site_name_gray.png);
                 transition: opacity 0.5s ease;
@@ -79,7 +77,6 @@
             <a href="/about.html"> 
               <button>
                 <div class= "contain">
-                  <div class= "image img-fluid"></div>
                 </div>
               </button>
             </a>
