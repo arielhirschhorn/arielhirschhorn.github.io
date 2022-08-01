@@ -21,6 +21,11 @@
               background-color:transparent
               }
 
+
+              .container {
+                position: relative
+              }
+
             
           
 
@@ -31,8 +36,8 @@
                 top: 0;
                 bottom: 0; 
                 margin: auto;
-                height: calc(10%);
-                width: calc(10%);
+                height: calc(5%);
+                width: calc(5%);
                 content: url(assets/site_name_white.png);
                 transition: opacity 0.5s ease;
                 -webkit-transition: opacity 0.5s ease;
@@ -45,8 +50,8 @@
                 top: 0;
                 bottom: 0; 
                 margin: auto; 
-                height: calc(10%);
-                width: calc(10%);
+                height: calc(5%);
+                width: calc(5%);
                 opacity: 0;
                 content: url(assets/site_name_gray.png);
                 transition: opacity 0.5s ease;
@@ -74,7 +79,9 @@
                 <div class="col">
                 <a href="/about.html"> 
                   <button>
-                      <div class= "image img-fluid"></div>
+                    <div class= "container">
+                      <div class= "image"></div>
+                    </div>
                   </button>
                   </a>
                 </div>
