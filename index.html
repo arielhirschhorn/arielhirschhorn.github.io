@@ -13,13 +13,27 @@
                 background: url(assets/tissue.jpg) top right no-repeat;
                 background-attachment: fixed;
                 background-size: cover;
-                height: 100%
+                height: 100%;
 
             }
 
             button {
               border: none;
               background-color:transparent
+              }
+
+
+              .parent {
+              height: 100%;
+              background: #CCCCCC;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              }
+              .child {
+                background-color: #FFFF00;
+                width: 1000px;
+                height: 1000px;
               }
 
 
@@ -55,9 +69,11 @@
     
     <body>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-      <div class="w-50" margin="auto">
-        <div class="row h-50 w-100">
-          <div class="col h-100 w-100">
+      <div class="parent">
+        <div class="child">
+
+        <div class="row">
+          <div class="col">
             <a href="/about.html"> 
               <button>
                 <div id="cf" height=171px width=900px>
@@ -105,6 +121,7 @@
           </div>
         </div>
       </div>
+    </div>
 
 
 
