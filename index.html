@@ -42,8 +42,17 @@
                 width: 100%;
                 height: 40%;
                 bottom: 0;
-                display:inline-block;
+                display: flex;
+                flex-direction: row;
               }
+
+
+              .column {
+              flex: 33.33%;
+              }
+
+
+
 
 
 
@@ -89,6 +98,7 @@
             
         </div>
         <div class="row2">
+          <div class ="column">
           <div id="cf">
               <button>
                 <a href="/photo.html"></a>
@@ -97,22 +107,28 @@
                 
               </button>
             </div>
+          </div>
+            <div class ="column">
             <div id="cf">
               <button>
                 <a href="/studio_art.html"></a>
-                  <img class="bottom" src="assets/studioart_gray"/>
+                  <img class="bottom" src="assets/studioart_gray.png"/>
                   <img class="top" src="assets/studioart_white.png" />
                 
               </button>
             </div>
+          </div>
+          <div class ="column">
             <div id="cf">
               <button>
                 <a href="/code.html"></a>
-                  <img class="bottom" src="assets/code_gray"/>
+                  <img class="bottom" src="assets/code_gray.png"/>
                   <img class="top" src="assets/code_white.png" />
                 
               </button>
             </div>
+          </div>
+            
             
         </div>
 
