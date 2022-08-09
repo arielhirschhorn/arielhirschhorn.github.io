@@ -31,7 +31,6 @@
 
 <body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="js/bootstrap.js"></script>
     <nav class="navbar navbar-expand-lg nav-fill w-100 navbar-light bg-light">
         <a class="navbar-brand pl-3 pr-3" href="#">
           <h2>AH</h2>
@@ -75,24 +74,17 @@
 
 
 
-    <script>
-      $( document ).ready(function() {
-    console.log( "ready!" );
-    $('carousel-control-next').on('click', function(event) {
-      console.log( "next" );
-      $('#myCarousel').carousel('next')
-      
-    })
+  <script src="https//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type='text/javascript' src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/bootstrap-carousel.js"></script>
+  <script type="text/javascript" src="/functions.js"></script>
 
-    $('carousel-control-prev').on('click', function(event) {
-      console.log( "prev" );
-      $('#myCarousel').carousel('prev')
-      
-    })
-
-
-});
-    </script>
+   <script type="text/javascript">
+       //starts the carousel
+       $document.ready(function () {
+           $('#myCarousel').carousel();
+       });
+  </script>
 
 
 </body>
