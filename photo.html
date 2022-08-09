@@ -14,16 +14,13 @@
           
 
         }
-        .carousel,
-        .item,
-        .active {
-        height: 50%;
-        margin-bottom: 60px;
-}
 
-.carousel-inner {
-    height: 100%;
-}
+        .container {
+          height: 50%;
+        }
+
+
+
 
         </style>
 
@@ -34,7 +31,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg nav-fill w-100 navbar-light bg-light">
-        <a class="navbar-brand pl-3" href="#">
+        <a class="navbar-brand pl-3 pr-3" href="#">
           <h2>AH</h2>
         </a>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -60,16 +57,33 @@
               <img src="/carousel/mask_2_3.jpg" class="d-block w-100" alt="Bird mask"/>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-mdb-target="#myCarousel" data-mdb-slide="prev" onclick="$('#myCarousel').carousel('prev')">
+          <button class="carousel-control-prev" type="button" data-mdb-target="#myCarousel" data-mdb-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-mdb-target="#myCarousel" data-mdb-slide="next" onclick="$('#myCarousel').carousel('next')">
+          <button class="carousel-control-next" type="button" data-mdb-target="#myCarousel" data-mdb-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
     </div>
+
+    <script>
+      $( document ).ready(function() {
+    console.log( "ready!" );
+    $('carousel-control-next').on('click', function(event) {
+      $('#myCarousel').carousel('next')
+      console.log( "next" );
+    })
+
+    $('carousel-control-prev').on('click', function(event) {
+      $('#myCarousel').carousel('prev')
+      console.log( "prev" );
+    })
+
+
+});
+    </script>
 
 
 </body>
