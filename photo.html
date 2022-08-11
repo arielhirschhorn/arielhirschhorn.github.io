@@ -80,31 +80,34 @@
   var images = [];
 
 
+  function changeImg() {
+
+if(i < images.length - 1 && advance == true) {
+  i++;
+} else if (i < images.length - 1 && advance == false) {
+  i--;
+} else {
+    i=0;
+  }
+document.slide.src = images[i];
+};
+
+
   document.getElementById('carousel-control-next').onclick = function() {
   advance = true;
   console.log("advance clicked");
   changeImg();
-}​
+};
 
 document.getElementById('carousel-control-prev').onclick = function() {
   advance = false;
   console.log("previous clicked");
   changeImg();
-}​
+}​;
 
   
 
-  function changeImg() {
 
-    if(i < images.length - 1 && advance == true) {
-      i++;
-    } else if (i < images.length - 1 && advance == false) {
-      i--;
-    } else {
-        i=0;
-      }
-    document.slide.src = images[i];
-    }
 
 
 
