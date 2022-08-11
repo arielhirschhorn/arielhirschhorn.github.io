@@ -85,6 +85,8 @@ if(i < images.length - 1 && advance == true) {
 i++;
 } else if (i < images.length - 1 && advance == false) {
 i--;
+} else if (i == 0 && advance == true) {
+i =2;
 } else {
   i=0;
 }
@@ -94,14 +96,14 @@ document.slide.src = images[i];
 
 
 document.getElementById('prev-btn').onclick = function() {
-advance = true;
-console.log("advance clicked");
+advance = false;
+console.log("prev clicked");
 changeImg();
 }
 
 document.getElementById('next-btn').onclick = function() {
-advance = false;
-console.log("previous clicked");
+advance = true;
+console.log("next clicked");
 changeImg();
 }
 }
