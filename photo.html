@@ -110,8 +110,9 @@ if (images[i].width > images[i].height) {
   divWidth = "400px";
 
 }
-document.slide.style.width = divWidth  
+  
 document.slide.src = images[i];
+document.getElementsByTagName('slide').style.width = divWidth;
 
 
 }
