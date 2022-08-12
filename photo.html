@@ -59,7 +59,7 @@
     <div class="col text-center pt-3 pb-3">
       <div id="myCarousel" class="carousel slide" data-mdb-ride="carousel">
         <div class="carousel-inner">
-        <img name="slide" width="500px" height="auto">
+        <img name="slide" height="auto">
       </div>
     </div>
     </div>
@@ -82,6 +82,8 @@ window.onload = function() {
 document.slide.src = images[0];
 var i = 0;
 var advance = true;
+var landscape = false;
+var divWidth = 400;
 
 
 
@@ -98,20 +100,30 @@ i =2;
 } else {
   i=0;
 }
-  console.log(i)
+
+
+if (images[i].width > images[i].height) {
+  landscape = true;
+  divwidth = 600;
+} else {
+  landscape = false;
+  divWidth = 400;
+
+}
+document.slide.width = divWidth  
 document.slide.src = images[i];
+
+
 }
 
 
 document.getElementById('prev-btn').onclick = function() {
 advance = false;
-console.log("prev clicked");
 changeImg();
 }
 
 document.getElementById('next-btn').onclick = function() {
 advance = true;
-console.log("next clicked");
 changeImg();
 }
 }
