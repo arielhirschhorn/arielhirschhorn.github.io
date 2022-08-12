@@ -80,10 +80,12 @@
     images[2] = "carousel/denim.jpg";
 window.onload = function() {
 document.slide.src = images[0];
+document.getElementsByTagName('slide').style.width = '400px';
+
 var i = 0;
 var advance = true;
 var landscape = false;
-var divWidth = "400px";
+var divWidth = '400px';
 
 
 
@@ -104,10 +106,10 @@ i =2;
 
 if (images[i].width > images[i].height) {
   landscape = true;
-  divWidth = "600px";
+  divWidth = '600px';
 } else {
   landscape = false;
-  divWidth = "400px";
+  divWidth = '400px';
 
 }
   
