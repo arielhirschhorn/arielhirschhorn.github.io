@@ -83,7 +83,7 @@ document.slide.src = images[0];
 var i = 0;
 var advance = true;
 var landscape = false;
-var divWidth = 400;
+var divWidth = "400px";
 
 
 
@@ -104,10 +104,10 @@ i =2;
 
 if (images[i].width > images[i].height) {
   landscape = true;
-  divwidth = 600;
+  divWidth = "600px";
 } else {
   landscape = false;
-  divWidth = 400;
+  divWidth = "400px";
 
 }
 document.slide.style.width = divWidth  
