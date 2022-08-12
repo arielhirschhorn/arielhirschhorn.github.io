@@ -59,7 +59,7 @@
     <div class="col text-center pt-3 pb-3">
       <div id="myCarousel" class="carousel slide" data-mdb-ride="carousel">
         <div class="carousel-inner">
-        <img name="slide" width="400px" height="600px">
+        <img name="slide">
       </div>
     </div>
     </div>
@@ -75,9 +75,13 @@
 
 <script>
   var images = [];
-    images[0] = "carousel/mom_beach_2_3.jpg";
-    images[1] = "carousel/michelle_ig.jpg";
-    images[2] = "carousel/denim.jpg";
+    images[0] = "carousel/mom_beach.jpg";
+    images[1] = "carousel/michelle_2_3.jpg";
+    images[2] = "carousel/landscape_denim.jpg";
+
+
+
+
     
     
 window.onload = function() {
@@ -85,11 +89,9 @@ window.onload = function() {
 
 var i = 0;
 var advance = true;
-var landscape = false;
-var divWidth = '400px';
-var divHeight = '600px';
 
 
+ 
 
 
 
@@ -105,21 +107,9 @@ i =2;
   i=0;
 }
 
-
-if (images[i].width > images[i].height) {
   
-  console.log(images[i].width)
-  console.log(images[i.height])
-  landscape = true;
-  console.log(landscape)
-  divWidth = '600px';
-  divHeight = '400px'
-} else {
-  landscape = false;
-  divWidth = '400px';
-  divHeight = '600px'
 
-}
+
   
 document.slide.src = images[i];
 
@@ -130,16 +120,13 @@ document.slide.src = images[i];
 document.getElementById('prev-btn').onclick = function() {
 advance = false;
 changeImg();
-document.slide.style.width = divWidth;
-document.slide.style.height = divHeight;
+
 
 }
 
 document.getElementById('next-btn').onclick = function() {
 advance = true;
 changeImg();
-  document.slide.style.width = divWidth;
-  document.slide.style.height = divHeight;
 }
 }
 
