@@ -118,7 +118,6 @@ if (images[i].width > images[i].height) {
 }
   
 document.slide.src = images[i];
-document.getElementsByTagName('slide').style.width = divWidth;
 
 
 }
@@ -127,11 +126,16 @@ document.getElementsByTagName('slide').style.width = divWidth;
 document.getElementById('prev-btn').onclick = function() {
 advance = false;
 changeImg();
+document.slide.style.width = divWidth;
+document.slide.style.height = divHeight;
+
 }
 
 document.getElementById('next-btn').onclick = function() {
 advance = true;
 changeImg();
+  document.slide.style.width = divWidth;
+  document.slide.style.height = divHeight;
 }
 }
 
