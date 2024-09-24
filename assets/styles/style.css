@@ -4,12 +4,64 @@ Brand Identity by Tina Zhou https://thetinazhou.com/ */
 /* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap');
 
-.main {
-    font-family: "Sono", monospace;
-        font-optical-sizing: auto;
-        font-weight: 200;
-        font-style: normal;
-        font-variation-settings:
-            "MONO" 1;
+body {
+    background-image: url('../images/background.png');
+    background-size: cover;
 }
 
+.navbar {
+    padding: 10px 0;
+}
+.navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 50px 50px 100px 100px;
+    padding: 0;
+}
+
+.navbar-menu li {
+    padding: 0 15px;
+}
+
+
+.navbar-menu a {
+    font-family: "Sono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    font-variation-settings:
+        "MONO" 1;
+    text-decoration: none;
+    font-size: 24pt;
+    color: black;
+}
+
+.navbar li:hover, .navbar li:focus {
+    text-decoration: underline;
+}
+
+/* Style for the logo */
+.logo {
+vertical-align: middle;
+}
+
+.logo img {
+    height: 100px;
+}
+
+/* Responsive fix: adjust spacing on smaller screens */
+@media (max-width: 768px) {
+    .navbar-menu {
+        flex-direction: column;
+    }
+
+    .navbar-menu li {
+        padding: 10px 0;
+    }
+
+    .logo {
+        margin: 10px 0;
+    }
+}
