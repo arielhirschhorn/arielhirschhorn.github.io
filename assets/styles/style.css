@@ -4,7 +4,7 @@ Brand Identity by Tina Zhou https://thetinazhou.com/ */
 /* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap');
 
-h1 {
+.main {
     font-family: "Sono", monospace;
         font-optical-sizing: auto;
         font-weight: 200;
