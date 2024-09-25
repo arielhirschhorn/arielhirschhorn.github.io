@@ -4,54 +4,68 @@ Brand Identity by Tina Zhou https://thetinazhou.com/ */
 /* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap');
 
+* {
+    font-family: "Sono", monospace;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings:
+            "MONO" 1;
+        text-decoration: none;
+        color: black;
+}
+
 body {
     background-image: url('../images/background.png');
     background-size: cover;
 }
 
-.navbar {
-    padding: 10px 0;
-}
-.navbar-menu {
+/* Navbar */
+
+nav,
+nav span {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-    list-style: none;
-    margin: 50px 50px 100px 100px;
-    padding: 0;
+    /* so they do not overlap each other if space too short */
 }
 
-.navbar-menu li {
-    padding: 0 15px;
+nav {
+    margin: 50px 50px 50px 50px;
+}
+
+span:first-of-type:after,
+span:last-of-type:before {
+    content: '';
+    display: inline-block;
+}
+
+nav > span {
+    flex: 2;
 }
 
 
-.navbar-menu a {
-    font-family: "Sono", monospace;
-    font-optical-sizing: auto;
+
+
+nav a {
     font-weight: 350;
-    font-style: normal;
-    font-variation-settings:
-        "MONO" 1;
-    text-decoration: none;
     font-size: 24pt;
     color: black;
 }
 
-.navbar li:hover, .navbar li:focus {
+nav a:hover, nav a:focus {
     text-decoration: underline;
 }
 
 /* Style for the logo */
-.logo {
-vertical-align: middle;
-}
+
+
 
 .logo img {
     height: 100px;
 }
 
-/* Responsive fix: adjust spacing on smaller screens */
+/* Mobile styling- TODO ADJUST */
 @media (max-width: 768px) {
     .navbar-menu {
         flex-direction: column;
@@ -64,4 +78,17 @@ vertical-align: middle;
     .logo {
         margin: 10px 0;
     }
+}
+
+.upcoming {
+    margin-top: auto;
+}
+.upcoming img {
+height: 300px;
+}
+
+.upcoming h2 {
+    text-align: center;
+    font-size: 12pt;
+    color: black;
 }
