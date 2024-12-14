@@ -15,7 +15,7 @@ Brand Identity by Tina Zhou https://thetinazhou.com/ */
 }
 
 body {
-    background-image: url('../images/background.png');
+    background-image: url('../images/background.webp');
     background-size: cover;
 }
 
@@ -63,7 +63,7 @@ nav a {
 
 
 
-/* Style for the logo */
+
 
 .newsletter {
     font-weight: 350;
@@ -76,7 +76,7 @@ nav a {
     text-decoration: none;
 }
 
-
+/* Style for the logo */
 
 .logo img {
     height: 100px;
@@ -88,7 +88,7 @@ nav a {
 }
 
 /* Mobile styling- TODO ADJUST */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .navbar-menu {
         flex-direction: column;
     }
@@ -105,29 +105,41 @@ nav a {
         display: none;
     }
 
-        li {
-            margin: 10px 100px;
+    li {
+            margin: 10px 230px;
+        }
+    ol  {
+            padding-left: 0;
         }
 
-        ol {
-            margin: 0px;
-        }
-
-        a .btn {
+        .btn a {
             text-align: center;
-        }
-    .col-sm .tracklist {
-        text-align: center;
-        margin: 50px auto;
-    }
-        .col-sm .btn{
-            text-align: center;
+            margin-left: 0;
             margin: 0 auto;
         }
+
+
         .tracks {
             text-align: center;
-            margin: 0 auto;
+            
         }
+        .butterfly2 .tracklist {
+            margin-left: 0;
+        }
+        .tracklist h5 {
+           text-align: center;
+            
+        }
+
+        .tracklist {
+            text-align: center;
+        }
+        .butterfly2 .tracklist a .btn {
+            text-align: center;
+            margin-left:0;
+            margin: auto;
+        }
+        
 
 }
 
