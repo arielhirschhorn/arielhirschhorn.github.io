@@ -14,9 +14,16 @@ Brand Identity by Tina Zhou https://thetinazhou.com/ */
         color: black;
 }
 
+/* General styling */
+
 body {
     background-image: url('../images/background.webp');
     background-size: cover;
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
 
 /* Navbar */
@@ -50,10 +57,6 @@ a:hover, a:focus {
 text-decoration: underline;
 }
 
-a {
-    color: black;
-    text-decoration: none;
-}
 
 nav a {
     font-weight: 350;
@@ -212,4 +215,32 @@ footer {
     align-items: center;
     list-style: none;
 
+}
+
+/* about page */
+
+.artist-photo-collage {
+    position: relative;
+    justify-content: center;
+}
+
+.textured-bg {
+    position: relative;
+    max-width: 60%;
+}
+
+.artist-photo {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    max-width: 50%;
+}
+
+.about p {
+    text-align: left;
+    font-size: 20px;
+}
+
+.about a {
+    text-decoration: underline;
 }
