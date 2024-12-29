@@ -17,7 +17,7 @@ Brand Identity by Tina Zhou https://thetinazhou.com/ */
 /* General styling */
 
 body {
-    background-image: url('../images/background.webp');
+    background-image: url('../images/background_smaller.jpg');
     background-size: cover;
 }
 
@@ -169,7 +169,7 @@ max-width: 90%;
     margin: 50px auto;
 }
 .row {
-    padding: 50px 50px 50px 50px;
+    padding: 0px 50px 0px 50px;
 }
 
 
