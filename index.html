@@ -12,75 +12,108 @@
     <title>Hey Rel</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/styles/style.css" />
   </head>
+  <nav class="navbar navbar-expand-sm justify-content-center">
+    <div class="container d-flex">
+      <button
+        class="navbar-toggler ms-auto"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#n_bar"
+        aria-controls="navbarNavAltMarkup"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="n_bar">
+        <ul class="navbar-nav mx-auto justify-content-center">
+          <li class="nav-item"><a class="nav-link" href="/music">music</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about">about</a></li>
+          <div class="logo" tabindex="0">
+            <li class="nav-item">
+              <a class="nav-link" title="home" href="/"
+                ><img src="assets/images/logo.png" alt="Black Hey Rel logo"
+              /></a>
+            </li>
+          </div>
+          <li class="nav-item"><a class="nav-link" href="/shows">shows</a></li>
+          <li class="nav-item"><a class="nav-link" href="/merch">merch</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <body>
-    <nav>
-      <span>
-        <a href="/music">music</a>
-        <a href="/shows">shows</a>
-      </span>
-      <div class="logo" tabindex="0">
-        <a href="/" title="home"
-          ><img src="assets/images/logo.png" alt="Black Hey Rel logo"
-        /></a>
-      </div>
-      <span>
-        <a href="/about">about</a>
-        <a class="newsletter" href="/newsletter">newsletter signup → </a>
-      </span>
-    </nav>
-    <div class="row">
-      <div class="col-lg-4 butterfly d-sm-none d-lg-block d-md-none">
+    <div class="row first-row">
+      <div class="col-md-12 col-sm-12 col-lg-3 butterfly1">
         <img
-          src="assets/images/butterfly-2_smaller.png"
-          alt="pink collaged butterfly with rhinestones at the tips of the wings"
+          src="assets/images/butterfly_1_tilt.png"
+          alt="purple and yellow collaged paper butterfly"
         />
       </div>
-      <div class="col-md-12 col-sm-12 col-lg-4 upcoming">
-        <p>My debut EP, <em>Big Try</em>, out March 7</p>
+      <div class="col-md-12 col-sm-12 col-lg-6 upcoming">
         <img
           class="cover"
-          src="assets/images/ep_cover_blue_smaller.jpg"
-          alt="abstract multicolored paper collage on blue space-like background. The EP's title, Big Try is in green cut paper letters"
+          src="assets/images/front_back.png"
+          alt="abstract multicolored paper collage on blue space-like background. The EP's title, Big Try is in green cut paper letters.
+          The tracklist on the back cover reads 1. Margery 2. Off Your Lips 3. Feeling Better 4. Blue Hour American Dream 5. Moth"
+        />
+
+        <!-- <p>My debut EP, <em>Big Try</em>, out March 7</p>
+        <a class="btn" href="https://distrokid.com/hyperfollow/heyrel/big-try"
+          >presave</a
+        > -->
+      </div>
+      <div class="col-md-12 col-sm-12 col-lg-3 butterfly2">
+        <img
+          src="assets/images/butterfly-2_smaller.png"
+          alt="pink paper collage butterfly with rhinestones"
         />
       </div>
-      <div class="col-md-12 col-sm-12 col-lg-4 butterfly2">
-        <div class="tracklist">
-          <h5>Tracklist:</h5>
-          <div class="tracks">
-            <ol>
-              <li>Margery</li>
-              <li>Off Your Lips</li>
-              <li>Feeling Better</li>
-              <li>Blue Hour</li>
-              <li>Moth</li>
-            </ol>
-          </div>
-          <a class="btn" href="/">presave</a>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-lg-12 upcoming">
+        <div class="upcoming-container">
+        <h2>My debut EP, <em>Big Try</em>, out March 7</h2>
+        <a class="btn" href="https://distrokid.com/hyperfollow/heyrel/big-try"
+          >presave</a
+        >
         </div>
-        <img
-          src="assets/images/butterfly-1_smaller.png"
-          alt="yellow and purple collaged butterfly with rhinestones on its antenna"
-        />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <img
+        class="artist-photo"
+        src="assets/images/Hey_Rel_16_9.jpg"
+        alt="Rel, a white androgynous person, sits on a couch in a colorful outfit"
+      />
+    </div>
+    <div class="row text-center">
+      <div class="col-md-12 col-sm-12 col-lg-12">
+      <img src="assets/images/big_try_text.png"
+      class="big-try"
+      >
       </div>
     </div>
 
     <footer class="footer socials">
       <ul>
-        <li><a href="https://www.instagram.com/h3yrel/"></a>instagram</li>
-        <li>spotify</li>
-        <li>apple music</li>
+        <li><a href="https://www.instagram.com/heyheyrel/">instagram</a></li>
         <li><a href="https://heyrel.bandcamp.com/">bandcamp</a></li>
         <li><a href="mailto:rel@heyrel.com">email</a></li>
       </ul>
     </footer>
-
-    <script src="assets/scripts/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

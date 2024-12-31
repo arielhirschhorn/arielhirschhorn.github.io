@@ -2,245 +2,233 @@
 Brand Identity by Tina Zhou https://thetinazhou.com/ */
 
 /* Imports */
-@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap");
 
 * {
-    font-family: "Sono", monospace;
-        font-optical-sizing: auto;
-        font-style: normal;
-        font-variation-settings:
-            "MONO" 1;
-        text-decoration: none;
-        color: black;
+  font-family: "Sono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "MONO" 1;
+  text-decoration: none;
+  color: black;
+}
+
+.upcoming-container {
+  margin: 100px 200px 100px 200px;
 }
 
 /* General styling */
 
 body {
-    background-image: url('../images/background_smaller.jpg');
-    background-size: cover;
+  background-image: url("../images/background_smaller.jpg");
+  background-size: cover;
 }
 
 a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
+}
+
+/* Row */
+
+.first-row {
+  background-image: url("../images/red-bg.jpg");
+  background-size: cover;
 }
 
 /* Navbar */
 
 nav,
 nav span {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    /* so they do not overlap each other if space too short */
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  /* so they do not overlap each other if space too short */
 }
 
-nav {
-    margin: 50px 50px 50px 50px;
+navbar {
+  margin: 0px 50px 0px 50px;
+  position: sticky;
 }
 
 span:first-of-type:after,
 span:last-of-type:before {
-    content: '';
-    display: inline-block;
+  content: "";
+  display: inline-block;
 }
 
-nav > span {
-    flex: 2;
+a:hover,
+a:focus {
+  color: #7c3746;
+  text-decoration: underline;
 }
 
-
-a:hover, a:focus {
-    color: #7c3746;
-text-decoration: underline;
+@media (min-width: 576px) {
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
 }
 
-
-nav a {
-    font-weight: 350;
-    font-size: 24pt;
-    
+.nav-link {
+  color: black;
+  font-weight: 350;
+  font-size: 24pt;
 }
-
-
-
-
+.nav-link:hover {
+  color: #7c3746;
+}
 
 .newsletter {
-    font-weight: 350;
-    font-size: 12pt;
-    color: black;
-    text-decoration: underline;
+  font-weight: 350;
+  font-size: 12pt;
+  color: black;
+  text-decoration: underline;
 }
 
-.newsletter:hover, .newsletter:focus {
-    text-decoration: none;
+.newsletter:hover,
+.newsletter:focus {
+  text-decoration: none;
 }
 
 /* Style for the logo */
 
 .logo img {
-    height: 100px;
+  height: 100px;
 }
 
-.logo img:hover, .logo img:focus {
-    height: 100px;
-    filter: invert(25%) sepia(5%) saturate(6037%) hue-rotate(298deg) brightness(98%) contrast(88%);
+.logo img:hover,
+.logo img:focus {
+  height: 100px;
+  filter: invert(25%) sepia(5%) saturate(6037%) hue-rotate(298deg)
+    brightness(98%) contrast(88%);
 }
 
 /* Mobile styling- TODO ADJUST */
 @media (max-width: 992px) {
-    .navbar-menu {
-        flex-direction: column;
-    }
+  .logo {
+    margin: 10px 0;
+  }
 
-    .navbar-menu li {
-        padding: 10px 0;
-    }
+  .upcoming-container {
+    margin: 50px 50px 50px 50px;
+  }
 
-    .logo {
-        margin: 10px 0;
-    }
+  .butterfly1 {
+    display: none;
+  }
 
-    .butterfly {
-        display: none;
-    }
+  .butterfly2 {
+    display: none;
+  }
 
-    li {
-            margin: 10px 230px;
-        }
-    ol  {
-            padding-left: 0;
-        }
-
-        .btn a {
-            text-align: center;
-            margin-left: 0;
-            margin: 0 auto;
-        }
-
-
-        .tracks {
-            text-align: center;
-            
-        }
-        .butterfly2 .tracklist {
-            margin-left: 0;
-        }
-        .tracklist h5 {
-           text-align: center;
-            
-        }
-
-        .tracklist {
-            text-align: center;
-        }
-        .butterfly2 .tracklist a .btn {
-            text-align: center;
-            margin-left:0;
-            margin: auto;
-        }
-        
-
+  .btn a {
+    text-align: center;
+    margin-left: 0;
+    margin: 0 auto;
+  }
 }
 
 .upcoming {
-    text-align: center;
-
+  text-align: center;
 }
 .upcoming img {
-max-width: 90%;
-
-    height: auto;
+  padding: 50px;
+  height: auto;
+  margin: auto;
+  max-width: 80%;
+  display: block;
 }
 
-
-.butterfly img {
-    max-width: 50%;
-    transform: rotate(0.90turn);
-    display: block;
-        margin: 50px auto;
+.butterfly1 img {
+  max-width: 50%;
+  display: block;
+  margin: 50px auto;
 }
 .butterfly2 img {
-    max-width: 50%;
-    display: block;
-    margin: 50px auto;
+  max-width: 50%;
+  display: block;
+  top: 300px;
+  position: relative;
+  left: 70px;
+  transform: rotate(0.9turn);
 }
-.row {
-    padding: 0px 50px 0px 50px;
-}
-
 
 p {
-    text-align: center;
-    font-size: 12pt;
-    color: black;
+  text-align: center;
+  font-size: 12pt;
+  color: black;
 }
 
-p em {
-    font-style: italic;
+h2 {
+  padding-bottom: 1em;
+}
+
+h2 em {
+  font-style: italic;
+  color: #7c3746;
 }
 
 .btn {
-    padding: 10px 20px 10px 20px;
-    outline: solid black;
-    margin-left: 20px;
+  padding: 10px 20px 10px 20px;
+  outline: solid black;
+  text-align: center;
 }
 
-.btn:hover, btn:focus {
-    text-decoration: underline;
+.btn:hover,
+btn:focus {
+  text-decoration: underline;
 }
-
-
 
 .tracklist {
-    margin-top: 50px;
-    margin-left: 50px;
-        text-align: left;
+  margin-top: 50px;
+  margin-left: 50px;
+  text-align: left;
 }
 
-
 footer {
-    margin: 0 auto;
-    max-width: 600px;
+  margin: 0 auto;
+  max-width: 600px;
 }
 
 .socials ul {
-    text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    list-style: none;
-
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
 }
 
 /* about page */
 
 .artist-photo-collage {
-    position: relative;
-    justify-content: center;
+  position: relative;
+  justify-content: center;
 }
 
 .textured-bg {
-    position: relative;
-    max-width: 60%;
+  position: relative;
+  max-width: 60%;
 }
 
 .artist-photo {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    max-width: 50%;
+  width: 100%;
+  height: auto;
+}
+
+.big-try {
+  max-width: 30%;
 }
 
 .about p {
-    text-align: left;
-    font-size: 20px;
+  text-align: left;
+  font-size: 20px;
 }
 
 .about a {
-    text-decoration: underline;
+  text-decoration: underline;
 }
