@@ -30,6 +30,10 @@ a {
   text-decoration: none;
 }
 
+.collapsed-home {
+  display: none;
+}
+
 /* Row */
 
 .first-row {
@@ -107,12 +111,12 @@ a:focus {
 
 /* Style for the logo */
 
-.logo img {
+.logo {
   height: 100px;
 }
 
-.logo img:hover,
-.logo img:focus {
+.logo:hover,
+.logo:focus {
   height: 100px;
   filter: invert(25%) sepia(5%) saturate(6037%) hue-rotate(298deg)
     brightness(98%) contrast(88%);
@@ -122,6 +126,14 @@ a:focus {
 @media (max-width: 992px) {
   .logo {
     margin: 10px 0;
+  }
+
+  .home-link {
+    display: none;
+  }
+
+  .collapsed-home {
+    display: block;
   }
 
   .upcoming-container {
@@ -134,6 +146,13 @@ a:focus {
 
   .butterfly2 {
     display: none;
+  }
+
+  .nav-link {
+    color: black;
+    font-weight: 400;
+    font-size: 24pt;
+    white-space: nowrap; /* Prevent text from wrapping */
   }
 
   .btn a {
