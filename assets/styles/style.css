@@ -11,6 +11,7 @@ Brand Identity by Tina Zhou https://thetinazhou.com/ */
   font-variation-settings: "MONO" 1;
   text-decoration: none;
   color: black;
+  box-sizing: border-box;
 }
 
 .upcoming-container {
@@ -38,28 +39,6 @@ a {
 
 /* Navbar */
 
-nav,
-nav span {
-  display: flex;
-  position: sticky;
-  top: 0;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  /* so they do not overlap each other if space too short */
-}
-
-navbar {
-  margin: 0px 50px 0px 50px;
-  position: sticky;
-}
-
-span:first-of-type:after,
-span:last-of-type:before {
-  content: "";
-  display: inline-block;
-}
-
 a:hover,
 a:focus {
   color: #7c3746;
@@ -72,14 +51,46 @@ a:focus {
     padding-right: 75px;
   }
 }
+/* Box-sizing for better control over sizing and padding */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  overflow: hidden; /* Prevent overflow */
+}
+
+.nav-item {
+  padding: 0px 40px 0px 40px;
+}
+
+.navbar-nav {
+  display: flex; /* Keep items in a row */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Vertically center items */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  width: 100%; /* Ensure the navbar spans full width up to the max-width */
+}
 
 .nav-link {
   color: black;
   font-weight: 350;
-  font-size: 24pt;
+  font-size: 18pt;
+  white-space: nowrap; /* Prevent text from wrapping */
 }
+
 .nav-link:hover {
   color: #7c3746;
+}
+
+@media (min-width: 576px) {
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding-left: 40px; /* Adjust padding for wider screens */
+    padding-right: 40px;
+  }
 }
 
 .newsletter {
