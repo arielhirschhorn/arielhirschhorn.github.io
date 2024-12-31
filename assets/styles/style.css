@@ -236,8 +236,7 @@ footer {
 /* about page */
 
 .artist-photo-collage {
-  position: relative;
-  justify-content: center;
+  max-width: 80%;
 }
 
 .textured-bg {
@@ -252,6 +251,15 @@ footer {
 
 .big-try {
   max-width: 30%;
+}
+
+.about {
+  padding-left: 50px;
+}
+
+.about .credits p {
+  text-align: left;
+  font-size: 14px;
 }
 
 .about p {
