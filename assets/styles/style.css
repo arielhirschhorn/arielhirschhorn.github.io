@@ -288,13 +288,14 @@ btn:focus {
 footer {
   margin: 0 auto;
   max-width: 600px;
-  font-size: 18pt;
-  padding: 25px 0px 10px 0px;
+  font-size: 14pt;
+  padding: 25px 25px 25px 25px;
 }
 
 .socials ul {
   text-decoration: none;
   display: flex;
+  padding-left: 0;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
@@ -322,7 +323,7 @@ footer {
 }
 
 .big-try {
-  max-width: 10%;
+  max-width: 20%;
   margin: 25px 0px 25px 0px;
 }
 
