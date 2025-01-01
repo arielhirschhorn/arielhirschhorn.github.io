@@ -122,6 +122,20 @@ a:focus {
     brightness(98%) contrast(88%);
 }
 
+.navbar-toggler-icon {
+  background-image: url("../images/expand_menu.png");
+}
+
+.navbar-toggler {
+  border: 3px solid black;
+  color: black;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 2px;
+  color: #7c3746;
+}
+
 /* Mobile styling- TODO ADJUST */
 @media (max-width: 992px) {
   .logo {
@@ -137,7 +151,7 @@ a:focus {
   }
 
   .upcoming-container {
-    margin: 50px 50px 50px 50px;
+    margin: 50px 50px 0px 50px;
   }
 
   .butterfly1 {
@@ -146,6 +160,14 @@ a:focus {
 
   .butterfly2 {
     display: none;
+  }
+  .clothespin {
+    display: none;
+  }
+
+  .dice {
+    max-width: 30%;
+    margin: 0 auto;
   }
 
   .nav-link {
@@ -187,19 +209,47 @@ a:focus {
   transform: rotate(0.9turn);
 }
 
+.dice img {
+  max-width: 60%;
+  display: block;
+  margin: 50px auto;
+}
+
+.clothespin img {
+  display: block;
+  top: 300px;
+  max-width: 40%;
+  position: relative;
+  left: 70px;
+  transform: rotate(0.5turn);
+}
+
 p {
   text-align: center;
   font-size: 12pt;
   color: black;
 }
 
-h2 {
+h3 em {
+  font-style: italic;
+  color: #7c3746;
+}
+
+h3 {
   padding-bottom: 1em;
 }
 
-h2 em {
-  font-style: italic;
-  color: #7c3746;
+h2 {
+  font-size: 36pt;
+}
+
+.single {
+  text-align: center;
+  margin: 25px 0px 50px 0px;
+}
+.single img {
+  max-width: 35%;
+  padding-bottom: 25px;
 }
 
 .btn {
@@ -222,6 +272,7 @@ btn:focus {
 footer {
   margin: 0 auto;
   max-width: 600px;
+  font-size: 18pt;
 }
 
 .socials ul {
@@ -249,8 +300,13 @@ footer {
   height: auto;
 }
 
+.bracelet {
+  max-width: 10%;
+}
+
 .big-try {
-  max-width: 30%;
+  max-width: 10%;
+  margin: 25px 0px 25px 0px;
 }
 
 .about {
