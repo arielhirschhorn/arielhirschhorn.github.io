@@ -356,3 +356,9 @@ footer {
 .about a {
   text-decoration: underline;
 }
+
+@media (max-width: 576px) {
+  iframe {
+    height: 250px;
+  }
+}
