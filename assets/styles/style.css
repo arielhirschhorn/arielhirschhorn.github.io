@@ -148,6 +148,7 @@ a:focus {
 @media (max-width: 992px) {
   .logo {
     margin: 10px 0;
+    padding-left: 20px;
   }
 
   .home-link {
@@ -175,6 +176,10 @@ a:focus {
 
   .dice {
     max-width: 30%;
+    margin: 0 auto;
+  }
+
+  .merch {
     margin: 0 auto;
   }
 
@@ -219,6 +224,12 @@ a:focus {
 
 .dice img {
   max-width: 60%;
+  display: block;
+  margin: 50px auto;
+}
+
+.merch img {
+  max-width: 40%;
   display: block;
   margin: 50px auto;
 }
@@ -329,6 +340,7 @@ footer {
 
 .about {
   padding-left: 50px;
+  padding-right: 50px;
 }
 
 .about .credits p {
