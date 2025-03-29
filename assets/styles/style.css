@@ -34,12 +34,15 @@ a {
   display: none;
 }
 
-.thumbnail a {
-  text-decoration: underline;
+.merch {
+  padding: 50px 50px 0px 50px;
 }
 
-.shows {
-  padding: 50px 50px 50px 50px;
+.merch a {
+  text-decoration: underline;
+}
+.merch a:hover {
+  text-decoration: none;
 }
 
 /* Row */
@@ -300,7 +303,7 @@ footer {
   margin: 0 auto;
   max-width: 600px;
   font-size: 14pt;
-  padding: 25px 25px 25px 25px;
+  padding: 50px 25px 25px 25px;
 }
 
 .socials ul {
@@ -313,6 +316,45 @@ footer {
   list-style: none;
 }
 
+.socials ul a img {
+  width: 32px;
+}
+
+/* press */
+.press ul {
+  font-size: 18pt;
+  @media (max-width: 992px) {
+    font-size: 14pt;
+  }
+}
+
+.press h2 {
+  font-size: 18pt;
+}
+
+.press {
+  padding: 50px 100px 50px 100px;
+  @media (max-width: 992px) {
+    padding: 50px 50px 50px 50px;
+  }
+}
+
+.shows {
+  padding: 25px 25px 25px 25px;
+}
+
+.press a {
+  text-decoration: underline;
+}
+
+.press a:hover {
+  text-decoration: none;
+}
+
+.press p {
+  font-size: 14pt;
+  text-align: left;
+}
 /* about page */
 
 .artist-photo-collage {
